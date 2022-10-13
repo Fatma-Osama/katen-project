@@ -1,0 +1,208 @@
+﻿extends include/layout
+block content
+    .articles.me-3.ms-3 
+        .swiper.articles__slider
+            .swiper-wrapper
+                .swiper-slide
+                    +imagetext("celebration","want to have a more appealing tattoo","august 16, 2022")
+                    .photo-wrapper 
+                        img(src="/assets/images/first.jpg")
+                .swiper-slide
+                    +imagetext("politic", "your light is about to stop being relvant","august 23,2022")
+                    .photo-wrapper 
+                        img(src="/assets/images/culture.jpg")
+                .swiper-slide
+                    +imagetext("politic","15 unheard ways to achieve greater walker","august 24,2022")
+                    .photo-wrapper 
+                        img(src="/assets/images/culture2.jpg")
+                .swiper-slide
+                    +imagetext("culture","how to buy bulb on a tight budget","august 23,2022")
+                    .photo-wrapper 
+                        img(src="/assets/images/culture4.jpg")
+                .swiper-slide
+                    +imagetext("lifestyle", "10 ways to immediately start selling furniture","august 23,2022")
+                    .photo-wrapper 
+                        img(src="/assets/images/culture1.jpg")
+                .swiper-slide
+                    +imagetext("culture", "feel like a pro with the help of these 7 tips ","august 23,2022")
+                    .photo-wrapper 
+                        img(src="assets/images/joel-filipe.jpg")
+            .swiper-btns.pt-5
+                .swiper-pagination.main-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal
+                    span(class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true")
+                    span(class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2")
+                    span(class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3")
+    .blog-body.pt-5
+        .container.ps-5.pe-5
+            .row.pt-4
+                .col-xl-4.col-lg-6
+                    .blog__post
+                        .post__photo 
+                            img(src="assets/images/reports1.jpg")
+                        span.icon <i class="fa-regular fa-image"></i>
+                        +details("lifestyle","30 august 2022","how to learn evey thing about construction")
+                    .blog__post
+                        .post__photo 
+                            img(src="assets/images/reports3.jpg")
+                        +details("lifestyle","30 august 2022","Here Are 8 Ways To Success Faster")
+                    .blog__post
+                        .post__photo 
+                            img(src="assets/images/reports5.jpg")
+                        +details("lifestyle","30 august 2022","3 Easy Ways To Make Your iPhone Faster")
+                    .blog__post
+                        .post__photo 
+                            img(src="/assets/images/reports7.jpg")
+                        span.icon <i class="fa-solid fa-video"></i>
+                        +details("lifestyle","30 august 2022","Facts About Business That Will Help You Success")
+                    .blog__post
+                        .post__photo 
+                            img(src="assets/images/reports9.jpg")
+                        +details("lifestyle","30 august 2022","Facts About Business That Will Help You Success")                    
+                .col-xl-4.col-lg-6
+                    .blog__post
+                        .post__photo 
+                            img(src="assets/images/reports2.jpg")
+                        +details("lifestyle","29 august 2022","Master The Art Of Nature With These 7 Tips")
+                    .blog__post
+                        .post__photo 
+                            img(src="assets/images/reports4.jpg")
+                        span.icon <i class="fa-regular fa-image"></i>
+                        +details("lifestyle","29 august 2022","60 Things To Immediately Do About Building")
+                    .blog__post
+                        .post__photo 
+                            img(src="assets/images/reports6.jpg")
+                        +details("lifestyle","29 august 2022","15 Unheard Ways To Achieve Greater Walker")
+                    .blog__post
+                        .post__photo 
+                            img(src="assets/images/reports8.jpg")
+                        +details("lifestyle","29 august 2022","Your Light Is About To Stop Being Relevant")
+                    .blog__post
+                        .post__photo 
+                            img(src="assets/images/reports10.jpg")
+                        +details("lifestyle","29 august 2022","Feel Like A Pro With The Help Of These 7 Tips")
+                .col-xl-4.col-lg-12
+                    .about
+                        .about__photo
+                            img(src="assets/images/map-bg.png")
+                        .about__us
+                            h2 katen
+                                span
+                            p Hello, We’re content writer who is fascinated by content fashion, celebrity and lifestyle. We helps clients bring the right content to the right people.
+                            ul.list-unstyled.d-flex.justify-content-center
+                                li: a(href="#")
+                                    i(class="fa-brands fa-facebook-f")
+                                li: a(href="#")
+                                    i(class="fa-brands fa-twitter")
+                                li: a(href="#")
+                                    i(class="fa-brands fa-instagram")
+                                li: a(href="#")
+                                    i(class="fa-brands fa-pinterest")
+                                li: a(href="#")
+                                    i(class="fab fa-medium")
+                                li: a(href="#")
+                                    i(class="fa-brands fa-youtube")
+                    .popular
+                        +abouthead("popular posts")
+                        .popular__post
+                            .popular__photo
+                                span 1
+                                img(src="assets/images/reports5.jpg")
+                            +aboutbody("3 Easy Ways To Make Your iPhone Faster","26 august 2022")
+                        .popular__post
+                            .popular__photo
+                                span 2
+                                img(src="assets/images/reports7.jpg")
+                            +aboutbody("Facts About Business That Will Help You Success","23 august 2022")
+                        .popular__post
+                            .popular__photo
+                                span 3
+                                img(src="assets/images/reports6.jpg")
+                            +aboutbody("15 Unheard Ways To Achieve Greater Walker","24 august 2022")
+                    .topics
+                        +abouthead("explore topics")
+                        +topic("celebration","(2)")
+                        +topic("culture","(2)")
+                        +topic("fashion","(1)")
+                        +topic("inspiration","(2)")
+                        +topic("lifestyle","(6)")
+                        +topic("politic","(2)")
+                        +topic("trending","(2)")
+                    .subscribe
+                        +abouthead("newsletter")
+                        h4 join 70.000 subscribers!
+                        input(type="email" placeholder="Email address...")
+                        input(type="submit" value="sign up")
+                        p By signing up, you agree to our 
+                            span  Privacy Policy
+                    .fashion
+                        +abouthead("celebration")
+                        .swiper.fashion-celebration
+                            .swiper-wrapper
+                                .swiper-slide.ps-0.pe-0
+                                    .fashion__photo
+                                        a(href="#")
+                                            span celebration
+                                        img(src="assets/images/celebration1.jpg") 
+                                    .fashion__head
+                                        h3 what can we do about fashion right now
+                                        .name
+                                            p katen doe  
+                                                span.dot
+                                            span.date 17 august 2022
+                                .swiper-slide
+                                        .fashion__photo
+                                            a(href="#")
+                                                span celebration
+                                            img(src="assets/images/celebration2.jpg") 
+                                        .fashion__head
+                                            h3 want to have a more appealing tattoo
+                                            .name
+                                                p katen doe 
+                                                    span.dot 
+                                                span.date 16 august 2022
+                            <div class="swiper-button-prev main-slider-btns" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-71b577cf009a10c19">
+                                </div>
+                            <div class="swiper-button-next main-slider-btns" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-452897132f0996fb">
+                                </div>           
+                    .ads.mt-5
+                        span -sponsored ad - 
+                        a(href="#" class="ads__photo")
+                            img(src="assets/images/ad-360.png")
+                    .tags
+                        +abouthead("tag clouds")
+                        ul.list-unstyled.d-flex
+                            each tag in["#audio","#content","#featurd", "#image","#inspiration","#lifestyle","#photo","#pick","#slide","#trending"]
+                                li  
+                                    a(href="#" class="text-decoration-none")=tag
+            .page
+                .col-8
+                    .number
+                        a(href="#") 1
+                        a(href="#") 2
+                        a(href="#") <i class="fa-solid fa-angles-right"></i>
+    .instagram
+        a(href="#" class="text-decoration-none")
+            h3: span @ketan on instagram
+        .container.ps-5.pe-5 
+            .row.pt-4    
+                .col-2 
+                    a(href="#" class="instagram__photo")
+                        img(src="assets/images/instagram1.jpg")
+                .col-2
+                    a(href="#" class="instagram__photo")
+                        img(src="assets/images/instagram2.jpg")
+                .col-2
+                    a(href="#" class="instagram__photo")
+                        img(src="assets/images/reports9.jpg")
+                .col-2
+                    a(href="#" class="instagram__photo")
+                        img(src="assets/images/instagram4.jpg")
+                .col-2
+                    a(href="#" class="instagram__photo")
+                        img(src="assets/images/instagram5.jpg")
+                .col-2
+                    a(href="#" class="instagram__photo")
+                        img(src="assets/images/instagram6.jpg")
+
+
+    

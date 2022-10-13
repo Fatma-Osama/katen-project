@@ -1,0 +1,71 @@
+﻿mixin _(txt1, txt2= " ")
+    if lang === "en"
+        if txt2 !== " "
+            | #{txt2}
+        else
+            | #{txt1}
+    else
+        | #{txt1}
+mixin imagetext(object,title,date)
+    .ad-content.text-center
+        a(href="#" class="text-decoration-none button pb-1 pt-1")
+            p= object 
+        a(href="#" class="text-decoration-none")
+            h3= title
+        a(href="#" class="text-decoration-none detail") 
+            p ketan
+                span.dott
+            span= date
+mixin details(object,date,title,para)
+    .post__content
+        a(href="#" class="text-decoration-none button pb-1 pt-1")
+            p=object
+        .head 
+            img(src="../../assets/images/avatar-lg.png")
+            a(href="#" class="text-decoration-none detail d-block me-3") ketan doe   
+                span.dot
+            span(class="date ps-3")= date
+        h3(class="fw-bold mt-4 mb-3" )=title 
+        p The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,…
+        .icons
+            button 
+                i(class="fa-solid fa-share-nodes")
+            button 
+                i(class="fa-solid fa-ellipsis")
+mixin abouthead(title)
+    .heading.text-center
+        h2(class="fs-4 fw-bold text-capitalize")=title
+        <svg  width="33" height="6" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#FE4F70"></stop>
+        <stop offset="100%" stop-color="#FFA387"></stop>
+        </linearGradient>
+        </defs>
+        <path d="M33 1c-3.3 0-3.3 4-6.598 4C23.1 5 23.1 1 19.8 1c-3.3 0-3.3 4-6.599 4-3.3 0-3.3-4-6.6-4S3.303 5 0 5" stroke="url(#gradient)" stroke-width="2" fill="none"></path>
+        </svg>
+mixin aboutbody(title,date)
+    .popular__posts
+        a(href="#" class="text-decoration-none") 
+            h3(class="fs-6 fw-bold mb-1")=title
+        span(class="text-capitalize")= date
+mixin topic(title,num)
+    .topics__head
+        a(href="#" class="text-decoration-none d-flex align-items-center")
+            i(class="fa-solid fa-chevron-right")
+            h3(class="text-capitalize")=title
+        span=num
+mixin icons
+    ul.list-unstyled.d-flex
+        li: a(href="#")
+            i(class="fa-brands fa-facebook-f")
+        li: a(href="#")
+            i(class="fa-brands fa-twitter")
+        li: a(href="#")
+            i(class="fa-brands fa-instagram")
+        li: a(href="#")
+            i(class="fa-brands fa-pinterest")
+        li: a(href="#")
+            i(class="fa-brands fa-tiktok")
+        li: a(href="#")
+            i(class="fa-brands fa-youtube")       
