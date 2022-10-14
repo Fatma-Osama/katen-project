@@ -1,0 +1,32 @@
+.topics{
+    @include heading();
+    .heading{
+        margin-bottom: 30px;
+    }
+    &__head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       // margin-top: 30px;
+        padding: 8px 0;
+        border-top: 1px solid var(--border-color);
+        i{
+            color: var(--main-color);
+            margin-right: 25px;
+        }
+        h3{
+            &:hover{
+                color: var(--main-color);
+                transform: translateX(10px);
+            }
+            color: var(--head-color);
+            font-size: 16px;
+            font-weight: 700;
+            padding: 10px 0 0;
+            transition: all ease-in-out 0.3s;
+        }
+        span{
+            color: var(--para-color)
+        }
+    }
+}

@@ -1,0 +1,99 @@
+.articles{
+    .swiper-slide{
+        position: relative;
+        &:hover img{
+            transform: scale(1.2);
+        }
+        .ad-content{
+            padding: 0 30px;
+            position: absolute;
+            left:0;
+            top: 50%;
+            transform: translateY(-50%);
+            text-transform: capitalize;
+        .button{
+            &:hover::after{
+                height: 100%;
+                width: 200%;
+            }
+                @include btn();
+                font-size: 14px;
+                overflow: hidden;
+                p{
+                    margin: 0;
+                    z-index: 6;
+                    padding: 0;
+                    position: relative;
+                    font-size: 12px;
+                }
+            }
+        a h3{
+            color: #fff;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 15px auto;
+        }
+        .detail{
+            display: flex;
+            justify-content: center;
+            color: rgba(255,255,255,.5);
+            align-items: baseline;
+            flex-wrap: wrap;
+            font-size: 12px;
+            p{
+                margin-right: 30px;
+                margin-bottom: 8px;
+                &:hover{
+                    color: var(--main-color);
+                }
+                font-size: 16px;
+                position: relative;
+            span.dott{
+                @include poin();
+                width: 5px;
+                height: 5px;
+                background-color: var(--para-color);
+            }
+            }
+        }
+        }
+        .photo-wrapper{
+            &::after{
+                content: "";
+                background-color: rgba(32, 54, 86, 0.612);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                border-radius: 10px;
+            }
+            margin-bottom: 20px;
+            position: relative;
+            z-index: -1;
+            overflow: hidden;
+        img{
+            width: 100%;
+            aspect-ratio: 2.8/3.6;
+            z-index: -2;
+            border-radius: 10px;
+            transition: all ease-in-out 0.5s;
+            object-fit: cover;
+
+        }
+        }
+    }
+    .swiper-pagination{
+        .swiper-pagination-bullet-active{
+            background: var(--back-ground);//linear-gradient(to right,#fe4f70 0%,#ffa387 100%);
+            width: 25px;
+            border-radius: 5px;
+        }
+        :nth-child(even){
+            display: none;
+        }
+    }
+
+}

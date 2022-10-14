@@ -142,12 +142,12 @@ $breakpoints: (
       overflow: hidden;
   }
   background: var(--back-ground);
-  padding: 0.5rem 1rem ;
+  padding: 0  0.75rem ;
   color: #fff;
   border-radius: 25px;
   text-transform: capitalize;
   position: relative;
-  align-items: center;
+ // align-items: center;
   display: inline-block;
 }
 @mixin poin{

@@ -1,0 +1,105 @@
+.fashion{
+    @include heading();
+    position: relative;
+    &__photo{
+    margin: 1rem 0 0;
+    overflow: hidden;
+    border-radius: 10px;
+        a{
+            &:hover::after{
+                width: 200%;
+            }
+            @include btn();
+            position: absolute;
+            top: 40px;
+            left: 20px;
+            font-size: 12px;
+            text-transform: capitalize;
+            z-index: 4;
+            overflow: hidden;
+            text-decoration: none;
+            span{
+                position: relative;
+                z-index: 5;
+            }
+        }
+        img{
+            &:hover{
+                transform: scale(1.1); 
+            }
+            border-radius: 10px;
+            width: 100%;
+            object-fit: cover;
+            aspect-ratio: 3/2;
+            transition: all ease-in-out 0.3s;
+        }
+    }
+    .fashion__head{
+        margin: 0 0 30px;
+    h3{
+        &:hover{
+            color: var(--main-color);
+        }
+        font-size: 25px;
+        font-weight: 700;
+        margin: 1rem 0 0.5rem;
+        padding: 0;
+        color: var(--head-color);
+    }
+    .name{
+        p{
+            &:hover{
+                color: var(--main-color);
+            }
+            margin: 0 0 2rem;
+            color: var(--para-color);
+            padding: 0;
+            display: inline-block;
+            position: relative;
+                .dot{
+                right: 28%;
+                @include poin();
+                width: 3px;
+                height: 3px;
+                transform: translate(-70%, -50%);
+            }
+                
+        }
+        .date{
+            &:hover{
+                color: var(--para-color);
+            }
+            margin-left: 30px;
+            color: var(--para-color);
+        }
+    }
+   
+    }
+    .swiper{
+        
+        position: unset;
+        .swiper-button-next, .swiper-button-prev{
+            &:hover{
+                border-color: var(--main-color);
+            }
+            &::after{
+                font-size: 10px;
+                color: var(--para-color);
+            }
+            top: 95%;
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            border: 1px solid var(--border-color);
+            z-index: 18;
+            border-radius: 50%;
+        }
+        .swiper-button-next{
+            right: 42%;
+        }
+        .swiper-button-prev{
+            left: 42%
+        }  
+    }
+
+}

@@ -1,0 +1,45 @@
+.subscribe{
+    @include heading();
+    text-align: center;
+    .heading{
+        margin-bottom: 30px;
+    }
+    h4{
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--head-color);
+        margin-bottom: 20px;
+    }
+    input{
+        display: block;
+        margin: 10px auto ;
+        width: 100%;
+        border-radius: 25px;
+        padding: 8px;
+        text-align: center;
+        border: 1px solid var(--border-color);
+    }
+    input[type="email"]{
+        &::placeholder{
+            color: var(--para-color);
+        }
+        &:focus-visible{
+            outline: 1px solid var(--main-color)
+        }
+    }
+    input[type="submit"]{
+        &:hover{
+            background: var(--back-back);
+        }
+        background: var(--back-ground);
+        color: #fff;
+        text-transform: capitalize;
+    }
+    p{
+        color: var(--para-color);
+        font-size: 14px;
+        span{
+            color: var(--main-color);
+        }
+    }
+}

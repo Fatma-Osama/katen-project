@@ -17,9 +17,9 @@ mixin imagetext(object,title,date)
                 span.dott
             span= date
 mixin details(object,date,title,para)
+    a(href="#" class="text-decoration-none button pb-1 pt-1")
+        p=object
     .post__content
-        a(href="#" class="text-decoration-none button pb-1 pt-1")
-            p=object
         .head 
             img(src="../../assets/images/avatar-lg.png")
             a(href="#" class="text-decoration-none detail d-block me-3") ketan doe   
