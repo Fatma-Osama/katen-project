@@ -75,8 +75,17 @@
             z-index: -1;
             overflow: hidden;
         img{
+            @include respond-below(xxxl){
+                aspect-ratio: 2.8/3.4;              
+                }
+            @include respond-below(xl){
+                aspect-ratio: 2.4/3.2;              
+                }
+            @include respond-below(sm){
+                aspect-ratio: 1.5/1.2;              
+                }
             width: 100%;
-            aspect-ratio: 2.8/3.6;
+            aspect-ratio: 3/3;
             z-index: -2;
             border-radius: 10px;
             transition: all ease-in-out 0.5s;

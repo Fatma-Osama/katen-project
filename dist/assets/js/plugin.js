@@ -208,7 +208,7 @@ function toTop () {
 }
 function articlesFUNC() {
   var item = new Swiper(".articles__slider", {
-      slidesPerView: 5,
+      slidesPerView: 1,
       loop: true,
       speed: 1000,
       spaceBetween: 30,
@@ -224,10 +224,7 @@ function articlesFUNC() {
       },*/
       breakpoints: {
       570:{
-          slidesPerView: 1
-      },
-      600:{
-          slidesPerView: 2
+          slidesPerView: 2,
       },
       790: {
           slidesPerView: 3,

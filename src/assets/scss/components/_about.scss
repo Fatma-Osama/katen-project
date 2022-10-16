@@ -1,11 +1,14 @@
 .about{
     @include heading();
-    .about__us{
+    .about__photo{
+        position: relative;
+        img{max-width: 100%;}
+    }
+    .photo__text{
         text-align: center;
         position: absolute;
         top: 0;
         left: 0;
-        padding: 35px 30px;
         h2{
             
             font-weight: 700;

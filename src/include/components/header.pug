@@ -1,30 +1,29 @@
 .blog-header
-        .container.ps-5.pe-5
-            .row.justify-content-between.align-items-center
-                .col-4
-                    +icons
-                .col-4
-                    .blog__logo
-                        .logo__wrapper
-                            img(src="../../../assets/images/avatar-lg.png")
-                        .blog__title
-                            a(href="#",class="text-decoration-none")
-                                h2 katen
-                                    span
-                            p Minimal Blog & Magazine WordPress Theme
-                .col-4
-                    .blog__search
-                        a(href="#")
-                            i(class="fa-solid fa-magnifying-glass")
-                        button(class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
-                            span(class="navbar-toggler-icon") 
-                                i(class="fa-solid fa-bars")
-header
+    .container-fluide.container-xl
+        .row.justify-content-between.align-items-center
+            .col-md-4
+                +icons
+            .col-12.col-md-4
+                .blog__logo
+                    .logo__wrapper
+                        img(src="../../../assets/images/avatar-lg.png")
+                    .blog__title
+                        a(href="#",class="text-decoration-none")
+                            h2 katen
+                                span
+                        p Minimal Blog & Magazine WordPress Theme
+            .col-12.col-md-4
+                .blog__search.justify-content-between.justify-content-md-end
+                    a(href="#")
+                        i(class="fa-solid fa-magnifying-glass")
+                    button(class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+                        span(class="navbar-toggler-icon") 
+                            i(class="fa-solid fa-bars")
+header.d-none.d-lg-block
     .container.ps-5.pe-5
-        hr
-        ul(class=" me-auto ms-auto mb-2 mb-lg-0 d-flex list-unstyled content-between")
+        ul(class="main me-auto ms-auto mb-2 mb-lg-0 list-unstyled  d-flex content-between")
             li(class="nav-item dropdown active")
-                a(class="dropdown-toggle main" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false") home    
+                a(class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false") home
                 ul(class="dropdown-menu")
                     li
                         a(class="dropdown-item" ahref="#") magazine
@@ -42,7 +41,7 @@ header
                 a(href="#") culture
             li(class="nav-item dropdown items")
                 a(class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false") features
-                ul(class="dropdown-menu main")
+                ul(class="dropdown-menu")
                     li(class="list d-flex justify-content-between align-items-center")
                         a(class="dropdown-item" href="#") post layouts
                         i(class="fa-solid fa-chevron-right")
@@ -66,7 +65,7 @@ header
                     li(class="list d-flex justify-content-between align-items-center")    
                         a(class="dropdown-item right" href="#") archive 
                         i(class="fa-solid fa-chevron-right")
-                        ul.dropdown-menu.top-50.start-100
+                        ul.dropdown-menu.start-100
                             li 
                                 a(href="#") list
                             li 

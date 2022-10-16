@@ -1,4 +1,4 @@
-/*.footer{
+.footer{
     .row{
         border-top: 1px solid var(--border-color);
         padding: 50px 0px 25px;  
@@ -8,6 +8,7 @@
         font-size: 16px;
     }
     ul{
+        display: flex;
         justify-content: center;
         gap: 20px;
         li{
