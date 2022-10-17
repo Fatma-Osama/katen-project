@@ -74,6 +74,7 @@
             position: relative;
             z-index: -1;
             overflow: hidden;
+            border-radius: 10px;
         img{
             @include respond-below(xxxl){
                 aspect-ratio: 2.8/3.4;              

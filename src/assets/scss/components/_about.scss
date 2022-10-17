@@ -1,16 +1,11 @@
 .about{
     @include heading();
-    .about__photo{
-        position: relative;
-        img{max-width: 100%;}
-    }
-    .photo__text{
+    .about__content{
+        background-image: url(../images/map-bg.png);
         text-align: center;
-        position: absolute;
         top: 0;
         left: 0;
         h2{
-            
             font-weight: 700;
             font-size: 40px;
             color: var(--head-color);
@@ -30,6 +25,8 @@
             margin-bottom: 1.5rem;
         }
         ul{
+            margin: 0;
+            padding: 0;
             li{
                 &:hover a{
                     color: var(--main-color);

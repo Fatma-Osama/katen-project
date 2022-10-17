@@ -284,4 +284,13 @@ function articlesFUNC() {
   
   fashionFUNC();
   
-  
+  /*let li = document.querySelector(".active");
+  let menu = document.querySelector(".dropdown-menu");
+
+
+  console.log(menu);
+  li.onclick = function(){
+    menu.style.visibility="visible";
+    menu.style.opacity="1";
+  }
+  */

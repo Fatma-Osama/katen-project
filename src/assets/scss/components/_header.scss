@@ -2,6 +2,9 @@
     .row{
         padding: 30px 0;
         border-bottom: 1px solid var(--border-color);
+        @include respond-below(lg){
+            border: none;
+        }
     }
     ul{
         @include respond-below(md){
@@ -192,7 +195,7 @@ header{
             &:hover a{
                 color: var(--head-color);
             }
-            &:hover >.dropdown-menu{
+           &:hover >.dropdown-menu{
                visibility: visible;
                transform: scale(1) translate(0%, 0%);
               opacity: 1;

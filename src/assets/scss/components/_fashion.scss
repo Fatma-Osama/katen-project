@@ -35,7 +35,7 @@
         }
     }
     .fashion__head{
-        margin: 0 0 30px;
+       // margin: 0 0 30px;
     h3{
         &:hover{
             color: var(--main-color);
@@ -51,7 +51,7 @@
             &:hover{
                 color: var(--main-color);
             }
-            margin: 0 0 2rem;
+            margin: 0 0 30px ;
             color: var(--para-color);
             padding: 0;
             display: inline-block;
@@ -76,7 +76,6 @@
    
     }
     .swiper{
-        
         position: unset;
         .swiper-button-next, .swiper-button-prev{
             &:hover{
@@ -95,10 +94,12 @@
             border-radius: 50%;
         }
         .swiper-button-next{
-            right: 42%;
+            right: 50%;
+            transform: translateX(-50%);
         }
         .swiper-button-prev{
-            left: 42%
+            left: 50%;
+            transform: translateX(-50%);
         }  
     }
 

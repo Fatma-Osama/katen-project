@@ -1,14 +1,16 @@
 .page{
-    margin-top: -50px;
+    margin-top: -20px;
     .number{
         display: flex;
         justify-content: center;
         a:first-child {
             background: var(--back-ground);
+            color: #fff;
         }
         a{
         &:hover{
                 background: var(--back-ground);
+                color: #fff;
             }
             :last-child{
                 font-size: 8px;
