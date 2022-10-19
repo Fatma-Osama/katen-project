@@ -2,26 +2,26 @@
     .container-fluide.container-xl
         .row.justify-content-between.align-items-center
             .col-md-4
-                +icons
+                +social
             .col-12.col-md-4
-                .blog__logo
+                .blog-header__logo
                     .logo__wrapper
                         img(src="../../../assets/images/avatar-lg.png")
-                    .blog__title
+                    .logo__title
                         a(href="#",class="text-decoration-none")
                             h2 katen
                                 span
                         p Minimal Blog & Magazine WordPress Theme
             .col-12.col-md-4
-                .blog__search.justify-content-between.justify-content-md-end
+                .blog-header__search.justify-content-between.justify-content-md-end
                     a(href="#")
                         i(class="fa-solid fa-magnifying-glass")
                     button(class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
                         span(class="navbar-toggler-icon") 
                             i(class="fa-solid fa-bars")
-header.d-none.d-lg-block
-    .container.ps-5.pe-5
-        ul(class="main me-auto ms-auto mb-2 mb-lg-0 list-unstyled  d-flex content-between")
+nav                        
+    .container
+        ul.nav-list
             li(class="nav-item dropdown active")
                 a(class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false") home
                 ul(class="dropdown-menu")

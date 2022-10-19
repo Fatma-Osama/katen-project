@@ -1,5 +1,5 @@
 //hero slider
-let heroSlider;
+/*let heroSlider;
 function homeBannersSliderFunc() {
   if (heroSlider) heroSlider.destroy();
   heroSlider = new Swiper(".hero--slider", {
@@ -205,16 +205,17 @@ window.addEventListener('scroll' , ()=> {
 });
 function toTop () {
   document.documentElement.scrollTop = 0;
-}
-function articlesFUNC() {
-  var item = new Swiper(".articles__slider", {
+}*/
+
+function cardsFUNC() {
+  var item = new Swiper(".cards-slider", {
       slidesPerView: 1,
       loop: true,
       speed: 1000,
       spaceBetween: 30,
   
       pagination: {
-          el: ".articles .swiper-pagination",
+          el: ".cards .swiper-pagination",
           clickable: true,
       },
       /*cardsEffect: {
@@ -223,13 +224,13 @@ function articlesFUNC() {
           slideShadows: false
       },*/
       breakpoints: {
-      570:{
+      576:{
           slidesPerView: 2,
       },
-      790: {
+      786: {
           slidesPerView: 3,
       },
-      1100: {
+      1200: {
           slidesPerView: 4,
       },
       1450: {
@@ -239,10 +240,10 @@ function articlesFUNC() {
   });
   }
   
-  articlesFUNC();
+  cardsFUNC();
   
   function fashionFUNC() {
-      var item = new Swiper(".fashion-celebration", {
+      var item = new Swiper(".fashion-slider", {
           slidesPerView: 1,
           loop: true,
           speed: 600,
@@ -257,11 +258,11 @@ function articlesFUNC() {
           //     pauseOnMouseEnter: true,
           // },
           navigation: {
-              nextEl: ".fashion-celebration .swiper-button-next",
-          prevEl: ".fashion-celebration .swiper-button-prev",
+              nextEl: ".fashion .swiper-button-next",
+          prevEl: ".fashion  .swiper-button-prev",
           },
-          pagination: {
-              el: ".fashion-celebration .swiper-pagination",
+        /*  pagination: {
+              el: "fashion  .swiper-pagination",
               clickable: true,
           },
           /*cardsEffect: {

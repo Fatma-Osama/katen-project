@@ -1,19 +1,21 @@
-.about{
+.about-us {
     @include heading();
-    .about__content{
+    &__content {
         background-image: url(../images/map-bg.png);
         text-align: center;
         top: 0;
         left: 0;
-        h2{
+
+        h2 {
             font-weight: 700;
             font-size: 40px;
             color: var(--head-color);
             position: relative;
             display: inline-block;
             margin-bottom: 1.5rem;
-            span{
-                @include poin();
+
+            span {
+                @include point();
                 width: 10px;
                 height: 10px;
             }
@@ -24,20 +26,25 @@
             font-size: 15px;
             margin-bottom: 1.5rem;
         }
-        ul{
+        &__list {
             margin: 0;
             padding: 0;
-            li{
-                &:hover a{
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            li {
+                &:hover a {
                     color: var(--main-color);
                 }
+
                 margin-right: 20px;
-                a{
+                a {
                     color: var(--head-color);
                     transition: all ease-in-out 0.25s;
                 }
             }
         }
+    
     }
     
 }

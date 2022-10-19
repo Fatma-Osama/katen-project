@@ -7,34 +7,37 @@
     else
         | #{txt1}
 mixin imagetext(object,title,date)
-    .ad-content.text-center
-        a(href="#" class="text-decoration-none button pb-1 pt-1")
+    .cards__text
+        a(href= "#" class="title")
             p= object 
-        a(href="#" class="text-decoration-none")
+        a(href= "#" class="text-decoration-none")
             h3= title
-        a(href="#" class="text-decoration-none detail") 
-            p ketan
+        p.details 
+            a(href= "#") ketan
                 span.dott
-            span= date
-mixin details(object,date,title,para)
-    a(href="#" class="text-decoration-none button pb-1 pt-1")
+            span.time= date
+mixin info(object,date,title,para)
+    a(href="#" class="title")
         p=object
     .post__content
         .head 
             img(src="../../assets/images/avatar-lg.png")
-            a(href="#" class="text-decoration-none detail d-block me-3") ketan doe   
-                span.dot
-            span(class="date ps-3")= date
-        h3(class="fw-bold mt-4 mb-3" )=title 
+            p.details
+                a(href= "#") ketan doe
+                    span.dott
+                span.time= date
+        a(href="#")
+            h3(class="fw-bold mt-4 mb-3" )=title 
         p The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,…
-        .icons
-            button 
+        .footer
+            a.widget(href="#") 
                 i(class="fa-solid fa-share-nodes")
+            +social
             button 
                 i(class="fa-solid fa-ellipsis")
 mixin abouthead(title)
-    .heading.text-center
-        h2(class="fs-4 fw-bold text-capitalize")=title
+    .post-header
+        h2=title
         <svg  width="33" height="6" xmlns="http://www.w3.org/2000/svg">
         <defs>
         <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -48,15 +51,15 @@ mixin aboutbody(title,date)
     .popular__posts
         a(href="#" class="text-decoration-none") 
             h3(class="fs-6 fw-bold mb-1")=title
-        span(class="text-capitalize")= date
+        span(class="text-capitalize time")= date
 mixin topic(title,num)
-    .topics__head
+    .topics__title
         a(href="#" class="text-decoration-none d-flex align-items-center")
             i(class="fa-solid fa-chevron-right")
             h3(class="text-capitalize")=title
         span=num
-mixin icons
-    ul.list-unstyled
+mixin social
+    ul.social
         li: a(href="#")
             i(class="fa-brands fa-facebook-f")
         li: a(href="#")

@@ -1,0 +1,146 @@
+.title {
+    text-decoration: none;
+    
+    &:hover {
+        color: #fff;
+
+    }
+    &:hover::after {
+        height: 100%;
+        width: 200%;
+       // z-index: 11;
+    }
+        @include title();
+        font-size: 14px;
+        overflow: hidden;
+        z-index: 10;
+        p{
+            margin: 0;
+            z-index: 6;
+            padding: 0;
+            position: relative;
+            font-size: 12px;
+        }
+    }
+.details {
+    display: flex;
+    justify-content: center;
+    color: var(--para-color);
+    align-items: baseline;
+    flex-wrap: wrap;
+    font-size: 12px;
+    text-decoration: none;
+    margin-bottom: 0;
+
+    a {
+        margin-right: 30px;
+        margin-bottom: 8px;
+        text-decoration: none;
+        color: var(--para-color);
+
+
+        &:hover {
+            color: var(--main-color);
+        }
+
+        font-size: 16px;
+        position: relative;
+    span.dott {
+        @include point();
+        width: 5px;
+        height: 5px;
+        background-color: var(--para-color);
+    }
+    }
+}
+.time {
+    font-size: 12px;
+
+}
+
+.social {
+    @include respond-below(md) {
+        display: none;
+    }
+
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+
+    li {
+        margin-right: 20px;
+
+        a {
+            color: var(--head-color);
+            transition: color ease-in-out 0.5s;
+            font-size: 18px;
+
+            &:hover {
+                color: var(--main-color);
+            }
+        }
+    }
+}
+
+.post-header {
+    h2{
+    color: #203656;
+    font-family: "Poppins",sans-serif;
+    font-weight: 700;
+    line-height: 1.4;
+    font-size: 2rem;
+    text-transform: capitalize;
+
+    }
+
+}
+
+.widget {
+    &:hover +.social{
+        transform: scale(1);
+        
+    }
+    i {
+        color: var(--para-color);
+    }
+
+    display: block;
+    width: 100%;
+}  
+.social {
+    &:hover {
+        transform: scale(1);
+
+    }
+
+    display: flex;
+    position: absolute;
+    bottom: -7%;
+    left: -10%;
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition: all ease-in-out 0.7s;
+    z-index: 4;
+    transform: scale(0);
+
+
+    li {
+        a {
+            &:hover i {
+                color: var(--main-color);
+                transform: scale(1.1);
+            }
+            color: var(--para-color);
+            transition: all ease-in-out 0.4s;
+            i {
+                transition: all ease-in-out 0.4s;
+
+            }
+        }
+
+    }
+
+} 

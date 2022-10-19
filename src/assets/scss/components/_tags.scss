@@ -1,25 +1,30 @@
-.tags{
-    @include respond-below(xl){
+.tags {
+    @include respond-below(xl) {
         margin-bottom: 50px;
     }
     @include heading();
     margin-bottom: -5px;
-    ul{
+    &__item {
+       // .list-unstyled.d-flex
         flex-wrap: wrap;
+        list-style: none;
+        display: flex;
         margin: 30px 0 0;
         column-gap: 20px;
         justify-content: flex-start;
-        li{
+        li {
             margin: 0 0 15px;
             padding: 0;
-            &:hover a{
+
+            &:hover a {
                 color: var(--main-color);
                 border-color: var(--main-color);
             }
-            a{
-                &:hover{
+            a {
+                &:hover {
                     color: var(--main-color);
                     border-color: var(--main-color);
+                    
                 }
                 padding: 0.4rem 0.8rem;
                 color: var(--para-color);
