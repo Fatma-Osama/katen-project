@@ -18,6 +18,13 @@
         color: var(--para-color);
         font-size: 16px;
     }
+    .social {
+        transform: none;
+        position: unset;
+        border: none;
+        justify-content: center;
+
+    }
     
     .up {
         @include respond-below(md) {

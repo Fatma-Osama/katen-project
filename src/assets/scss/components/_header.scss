@@ -7,8 +7,18 @@
             border: none;
         }
     }
+    .social {
+        position: unset;
+        transform: none;
+        border: none;
+        a {
+            color: var(--head-color)
+        }
+    
 
-    .blog-header__logo {
+    }
+
+    &__logo {
         text-align: center;
 
         img {
@@ -45,7 +55,7 @@
         }
     }
 
-    .blog-header__search {
+    &__search {
         justify-content: flex-end;
         text-align: end;
         align-items: center;
@@ -143,7 +153,7 @@
     }
 }
 
-nav {
+.nav {
     @include respond-above(lg) {
         display: block;
     }
@@ -157,7 +167,7 @@ nav {
     padding-bottom: 15px;
     padding-top: 20px;
 
-    .nav-list {
+    &__list {
        // (class="main me-auto ms-auto mb-2 mb-lg-0 list-unstyled  d-flex content-between")
         text-transform: capitalize;
         list-style: none;

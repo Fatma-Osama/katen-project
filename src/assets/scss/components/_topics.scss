@@ -1,6 +1,6 @@
-.topics{
+.topics {
     @include heading();
-    .heading{
+    .heading {
         margin-bottom: 30px;
     }
     &__title{
@@ -14,7 +14,7 @@
             color: var(--main-color);
             margin-right: 25px;
         }
-        h3{
+        h3 {
             &:hover{
                 color: var(--main-color);
                 transform: translateX(10px);

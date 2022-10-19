@@ -1,29 +1,20 @@
-.instagram{
+.instagram {
     text-align: center;
     position: relative;
     padding-top: 20px;
 
-    &__title{
-        h3{
-        @include title();
-        overflow: hidden;
-        display: inline-block;
-        font-size: 16px;
-        padding: 0.75rem 2rem;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+   .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5rem 1.4rem;
 
-        &:hover::after{
-            width: 200%;
-        }
+    p {
+        font-size: 30px;
 
-        span{
-            position: relative;
-            z-index: 5;
-        }
-        }
+    }
+        
     }
 
     padding-left: 20px;
