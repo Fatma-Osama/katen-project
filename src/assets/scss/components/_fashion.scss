@@ -28,8 +28,10 @@
             transition: all ease-in-out 0.3s;
         }
     }
-    &__head{ 
-    
+    &__head { 
+        text-align: left;
+        margin-bottom: 0.8rem;
+
     h3{
         &:hover{
             color: var(--main-color);
@@ -37,12 +39,16 @@
 
         font-size: 25px;
         font-weight: 700;
-        margin: 1rem 0 0.5rem;
+        margin: 1rem 0 .5rem;
         padding: 0;
         color: var(--head-color);
     }
+    .details  {
+        justify-content: left;
 
-    .name{
+    }
+
+  /*  .name{
         p{
             &:hover{
                 color: var(--main-color);
@@ -69,7 +75,7 @@
             margin-left: 30px;
             color: var(--para-color);
         }
-    }
+    }*/
     
     }
     .fashion-slider {
