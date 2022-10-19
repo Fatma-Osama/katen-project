@@ -29,7 +29,7 @@ mixin info(object,date,title,para)
         a(href="#")
             h3(class="fw-bold mt-4 mb-3" )=title 
         p The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,…
-        .footer
+        .bottom
             a.widget(href="#") 
                 i(class="fa-solid fa-share-nodes")
             +social
@@ -48,10 +48,10 @@ mixin abouthead(title)
         <path d="M33 1c-3.3 0-3.3 4-6.598 4C23.1 5 23.1 1 19.8 1c-3.3 0-3.3 4-6.599 4-3.3 0-3.3-4-6.6-4S3.303 5 0 5" stroke="url(#gradient)" stroke-width="2" fill="none"></path>
         </svg>
 mixin aboutbody(title,date)
-    .popular__posts
-        a(href="#" class="text-decoration-none") 
-            h3(class="fs-6 fw-bold mb-1")=title
-        span(class="text-capitalize time")= date
+    .popular__item__text
+        a(href="#") 
+            h3=title
+        span= date
 mixin topic(title,num)
     .topics__title
         a(href="#" class="text-decoration-none d-flex align-items-center")

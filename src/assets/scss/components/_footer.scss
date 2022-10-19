@@ -1,4 +1,4 @@
-.footer {
+footer {
     margin-top: 20px;
     .row {
         @include respond-below(md) {
@@ -18,7 +18,7 @@
         color: var(--para-color);
         font-size: 16px;
     }
-    .social {
+        .social {
         transform: none;
         position: unset;
         border: none;
